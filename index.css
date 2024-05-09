@@ -1,26 +1,102 @@
 body {
-    padding:10px;
-    margin:0;
+    padding: 10px;
+    margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    background: #100a1c;
+    background-image:
+        radial-gradient(50% 30% ellipse at center top, #201e40 0%, rgba(0, 0, 0, 0) 100%),
+        radial-gradient(60% 50% ellipse at center bottom, #261226 0%, #100a1c 100%);
+    background-attachment: fixed;
+    color: #6cacc5;
 }
+
 div {
     width: 100%;
-    max-width:500px;
-    margin:auto;
-    margin-top:50px;
-    height:300px;
-    border: 1px solid;
+    max-width: 500px;
+    margin: auto;
+    border: 1px solid #463042;
     border-radius: 20px;
-    padding:50px;
+    padding-top: 20px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap:5px;
+    gap: 20px;
 }
-h1 {
-    margin-top:70px;
+
+h3 {
+    background: linear-gradient(45deg, #c97874 10%, #463042 90%);
+    background: transparent;
+    color: #8c5059;
+    font-weight: 400;
+    margin: 0 auto 6em;
+    max-width: 9em;
+}
+
+button {
+    border: 0;
+    background: rgba(42, 50, 113, .28);
+    color: #6cacc5;
+    cursor: pointer;
+    float: left;
+    font: inherit;
+    margin: 0.25em;
+    width: 100px;
+    height: 30px;
+    transition: all 0.5s;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+button:hover {
+    background: #201e40;
+}
+
+input {
+    width: 300px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    background: #201e40;
+    color: #6cacc5;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    box-sizing: border-box;
+    text-align: center;
+    outline: none;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+  }
+
+select {
+    width: 50px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    background: #201e40;
+    color: #6cacc5;
+    padding: 5px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    box-sizing: border-box;
+    outline: none;
+}
+
+
+p {
+    font-size: 18px;
+    font-weight: 600;
+    
 }
